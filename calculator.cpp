@@ -14,3 +14,19 @@ int Calculator::Mul (double a, double b)
 {
     return a * b + 0.5;
 }
+
+int Calculator::Pow (double base, int exponent)
+{
+    int result = 1;
+
+    for (int i = 0; i < exponent; i++) {
+        result *= base;
+    }
+
+    return result + 0.5;
+}
+
+int Calculator::Div (double a, double b) 
+{
+    return a / b + 0.5;
+}
